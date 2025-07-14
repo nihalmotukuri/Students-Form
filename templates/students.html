@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='index.css') }}">
+    <title>Students</title>
+</head>
+<body>
+    <div>
+        {% for student in students %}
+            <div class="student">
+                <p>Full Name: {{student.name}}</p>
+                <p>Email: {{student.email}}</p>
+                <p>Date of birth: {{student.dob}}</p>
+                <p>Course: {{student.course}}</p>
+                <p>Roll number: {{student.roll_number}}</p>
+            </div>
+        {% endfor %}
+        </div>
+</body>
+</html>

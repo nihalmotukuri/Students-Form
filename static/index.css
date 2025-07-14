@@ -1,0 +1,35 @@
+body {
+    background-color: black;
+    color: white;
+    padding: 24px;
+    text-align: center;
+}
+
+form {
+    width: 300px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    align-items: center;
+}
+
+input {
+    width: 200px;
+    padding: 8px;
+}
+
+.student {
+    border: 1px solid grey;
+    width: 420px;
+    text-align: start;
+    padding: 0 24px;
+    margin: auto;
+}
+
+button {
+    background-color: black;
+    color: white;
+    padding: 8px 12px;
+    cursor: pointer;
+}

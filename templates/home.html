@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='index.css') }}">
+</head>
+<body>
+    <h1>Student Registration Form</h1>
+
+    <form method="post" action="/student">
+        <input type="text" name="name" placeholder="Full name" />
+        <input type="email" name="email" placeholder="Email" />
+        <input type="date" name="date_of_birth" placeholder="Dath of birth" />
+        <input type="text" name="course" placeholder="course" />
+        <input type="number" name="roll_number" placeholder="Roll number">
+        <button type="submit">submit</button>
+    </form>
+</body>
+</html>
